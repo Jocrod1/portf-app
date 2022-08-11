@@ -10,6 +10,55 @@ body,
   font-family: "Montserrat", sans-serif;
 }
 
+.avatarCont {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 100%;
+  margin: 0 0 20px 0;
+}
+
+.avatarImg {
+  background-image: url("./assets/profile.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  -webkit-animation: morph 2s ease-in-out 1s infinite;
+  animation: morph 8s ease-in-out 1s infinite;
+  background-blend-mode: multiply;
+  box-shadow: 0 0 0px 7px hsl(0deg 0% 31% / 30%);
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
 @layer components {
   .body {
     @apply flex flex-1 justify-center items-center bg-white p-6 dark:bg-black transition-all;
@@ -19,5 +68,8 @@ body,
     @apply absolute right-6 top-6 p-3 border rounded-full text-black border-black  mt-4 lg:mt-0 transition-all;
     @apply hover:text-white hover:bg-black;
     @apply dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black;
+  }
+  .avatar {
+    @apply w-60 rounded-full;
   }
 }
