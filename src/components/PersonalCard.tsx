@@ -7,7 +7,7 @@ const PersonalCard = () => {
       <div className="avatarCont">
         <div
           // src={require("../assets/profile.png")}
-          className={"avatarImg"}
+          className={"avatarImg avI"}
         />
       </div>
       <div className="flex flex-col justify-center px-11 items-center lg:items-start">

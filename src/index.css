@@ -31,7 +31,7 @@ body,
   -webkit-animation: morph 2s ease-in-out 1s infinite;
   animation: morph 8s ease-in-out 1s infinite;
   background-blend-mode: multiply;
-  box-shadow: 0 0 0px 7px hsl(0deg 0% 31% / 30%);
+  //box-shadow: 0 0 0px 7px hsl(0deg 0% 31% / 30%);
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   overflow: hidden;
 }
@@ -71,5 +71,8 @@ body,
   }
   .avatar {
     @apply w-60 rounded-full;
+  }
+  .avI {
+    @apply border-8 border-gray-200 dark:border-blue-900 grayscale transition-all;
   }
 }
