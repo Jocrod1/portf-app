@@ -1,5 +1,5 @@
 import React from "react";
-import { GitHub, Instagram, Twitter } from "react-feather";
+import { GitHub, Instagram, Linkedin, Twitter } from "react-feather";
 
 const PersonalCard = () => {
   return (
@@ -12,18 +12,33 @@ const PersonalCard = () => {
       </div>
       <div className="flex flex-col justify-center px-11 items-center lg:items-start">
         <h1 className="font-extrabold text-6xl">José Pereira</h1>
-        <span className="text-left mb-5">
+        <span className="text-left mb-5 lg:mb-2">
           Software developer based in Valencia, Spain
         </span>
         <div className="flex flex-row w-28 justify-between">
-          <a href="http://www.twitter.com/jocrod1" target={"_blank"}>
+          <a
+            href="http://www.twitter.com/jocrod1"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <Twitter className="socials-icons" />
           </a>
-          <a href="http://www.github.com/jocrod1" target={"_blank"}>
+          <a
+            href="http://www.github.com/jocrod1"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <GitHub className="socials-icons" />
           </a>
-          <a href="http://www.instagram.com/jocrod1" target={"_blank"}>
+          <a
+            href="http://www.instagram.com/jocrod1"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <Instagram className="socials-icons ins" />
+          </a>
+          <a href="http://www.linkedin.com/" target={"_blank"} rel="noreferrer">
+            <Linkedin className="socials-icons" />
           </a>
         </div>
       </div>

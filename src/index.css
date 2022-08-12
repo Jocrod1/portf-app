@@ -71,6 +71,16 @@ body,
     @apply hover:text-white hover:bg-black;
     @apply dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black;
   }
+  .selectLangCont {
+    @apply absolute left-6 top-6;
+  }
+  .selectLangBtn {
+    @apply flex py-2 px-2 w-28 justify-between items-center;
+    @apply font-semibold fill-black;
+    @apply  border-2 rounded-lg text-black border-black transition-all;
+    @apply  hover:text-white hover:bg-black hover:fill-white;
+    @apply dark:text-white dark:border-white dark:fill-white dark:hover:bg-white dark:hover:text-black dark:hover:fill-black;
+  }
   .avatar {
     @apply w-60 rounded-full;
   }

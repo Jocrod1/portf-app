@@ -1,26 +1,13 @@
-import React, { FunctionComponent, useState } from "react";
-import { Moon, Sun } from "react-feather";
+import { FunctionComponent } from "react";
+import BtnDarkMode from "../../components/BtnDarkMode";
 import PersonalCard from "../../components/PersonalCard";
-import { themes } from "../../constants/themes";
-import UseToggleTheme from "../../Hooks/UseToggleTheme";
+import SelectLang from "../../components/SelectLang";
 
 const Home: FunctionComponent = () => {
-  const [colorTheme, setTheme] = UseToggleTheme();
-  const [darkMode, setDarkMode] = useState(colorTheme === themes.light);
-
-  const toggleDarkMode = (checked: boolean) => {
-    setTheme(colorTheme);
-    setDarkMode(checked);
-  };
-
   return (
     <div className="body">
-      <button
-        onClick={() => toggleDarkMode(!darkMode)}
-        className={"darkModeBtn"}
-      >
-        {!darkMode ? <Moon size={27} /> : <Sun size={27} />}
-      </button>
+      <BtnDarkMode />
+      <SelectLang />
       <PersonalCard />
     </div>
   );
