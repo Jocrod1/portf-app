@@ -76,10 +76,18 @@ body,
   }
   .selectLangBtn {
     @apply flex py-2 px-2 w-28 justify-between items-center;
-    @apply font-semibold fill-black;
-    @apply  border-2 rounded-lg text-black border-black transition-all;
+    @apply  border text-black border-black transition-all;
     @apply  hover:text-white hover:bg-black hover:fill-white;
     @apply dark:text-white dark:border-white dark:fill-white dark:hover:bg-white dark:hover:text-black dark:hover:fill-black;
+  }
+  .selectList{
+    @apply z-10 w-28 bg-white border border-zinc-200 dark:bg-black dark:border-zinc-900 transition-all;
+  }
+  .selectListCont {
+    @apply text-sm divide-y divide-zinc-200 dark:divide-zinc-900 text-zinc-700 dark:text-zinc-200 transition-all;
+  }
+  .selectItem {
+    @apply block py-2 px-4 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all;
   }
   .avatar {
     @apply w-60 rounded-full;
