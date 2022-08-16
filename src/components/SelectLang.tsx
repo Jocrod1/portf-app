@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import { ChevronDown } from "react-feather";
 import { useTranslation } from "react-i18next";
 import { Lang } from "../res/utils";

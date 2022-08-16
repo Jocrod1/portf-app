@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { themes } from "../constants/themes";
 
 const UseToggleTheme: () => [themes, (val: themes) => void] = () => {
   const [theme, setTheme] = useState(
     localStorage.theme === themes.dark.toString() ? themes.dark : themes.light
   );
-  const colorTheme: themes = theme == themes.dark ? themes.light : themes.dark;
+  const colorTheme: themes = theme === themes.dark ? themes.light : themes.dark;
 
   console.log(theme);
 
