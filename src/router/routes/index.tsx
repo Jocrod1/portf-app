@@ -5,10 +5,10 @@ const PageTitle = "Jocrod Portfolio";
 const DefaultRoute = "/";
 
 const Routes: Array<any> = [
-  // {
-  //     path: "/",
-  //     component: lazy(() => import("../../"))
-  // }
+  {
+    path: "/",
+    component: lazy(() => import("@pages/Home/Home")),
+  },
 ];
 
-export { PageTitle, DefaultRoute, Routes };
+export default { PageTitle, DefaultRoute, Routes };
