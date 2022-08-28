@@ -2,8 +2,13 @@ import { lazy } from "react";
 
 const PageTitle = "Jocrod Portfolio";
 
-const DefaultRoute = "/home"
+const DefaultRoute = "/";
 
-const Routes : Array<any> = [];
+const Routes: Array<any> = [
+  // {
+  //     path: "/",
+  //     component: lazy(() => import("../../"))
+  // }
+];
 
-export {PageTitle, DefaultRoute, Routes}
+export { PageTitle, DefaultRoute, Routes };

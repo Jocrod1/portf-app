@@ -19,7 +19,7 @@ const PersonalCard = () => {
         <span className="text-left mb-5 lg:mb-2">
           {t("aboutMe.descSummary")}
         </span>
-        <div className="flex flex-row w-28 justify-between">
+        <div className="flex flex-row w-24 justify-between">
           <a
             href="http://www.twitter.com/jocrod1"
             target={"_blank"}
@@ -34,13 +34,13 @@ const PersonalCard = () => {
           >
             <GitHub className="socials-icons" />
           </a>
-          <a
+          {/* <a
             href="http://www.instagram.com/jocrod1"
             target={"_blank"}
             rel="noreferrer"
           >
             <Instagram className="socials-icons ins" />
-          </a>
+          </a> */}
           <a href="http://www.linkedin.com/" target={"_blank"} rel="noreferrer">
             <Linkedin className="socials-icons" />
           </a>
