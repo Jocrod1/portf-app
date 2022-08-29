@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import Home from "../../Pages/Home/Home";
 
 const PageTitle = "Jocrod Portfolio";
 
@@ -7,7 +8,7 @@ const DefaultRoute = "/";
 const Routes: Array<any> = [
   {
     path: "/",
-    component: lazy(() => import("@pages/Home/Home")),
+    component: <Home />,
   },
 ];
 

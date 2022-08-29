@@ -17,9 +17,9 @@ const Router = () => {
     <AppRouter>
       <Routes>
         {RoutesApp.Routes.map((r) => (
-          <Route key={r.path} path={r.path} />
+          <Route key={r.path} path={r.path} element={r.component} />
         ))}
-        <Route path="*" element={"ERROR"} />
+        <Route path="/*" element={"ERROR"} />
       </Routes>
     </AppRouter>
   );
