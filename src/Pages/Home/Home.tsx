@@ -6,8 +6,8 @@ import SelectLang from "../../components/SelectLang";
 const Home: FunctionComponent = () => {
   return (
     <div className="body">
-      <BtnDarkMode />
-      <SelectLang />
+      {/* <BtnDarkMode />
+      <SelectLang /> */}
       <PersonalCard />
     </div>
   );

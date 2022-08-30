@@ -6,7 +6,7 @@ import Router from "./router/router";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Router />
     </>
   );

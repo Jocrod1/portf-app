@@ -24,23 +24,23 @@ const SelectLang = () => {
         <span>{t("langs." + selectedLang)}</span>
         <ChevronDown />
       </button>
-      {open && (
-        <div className="selectList">
-          <ul className="selectListCont">
-            {langs.map((l) => (
-              <li
-                key={l}
-                onMouseDown={() => handleChangeLanguage(l)}
-                className="selectItem"
-              >
-                {t("langs." + l)}
-              </li>
-            ))}
-            {/* <li className="selectItem">{t("langs." + i18n.languages[0])}</li>
+      {/* {open && ( */}
+      <div className={`selectList  ${open ? "scale-100" : "scale-0"}`}>
+        <ul className="selectListCont">
+          {langs.map((l) => (
+            <li
+              key={l}
+              onMouseDown={() => handleChangeLanguage(l)}
+              className="selectItem"
+            >
+              {t("langs." + l)}
+            </li>
+          ))}
+          {/* <li className="selectItem">{t("langs." + i18n.languages[0])}</li>
             <li className="selectItem">{t("langs." + i18n.languages[1])}</li> */}
-          </ul>
-        </div>
-      )}
+        </ul>
+      </div>
+      {/* )} */}
     </div>
   );
 };
