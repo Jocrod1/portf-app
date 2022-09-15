@@ -72,7 +72,7 @@ body,
     @apply dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black;
   }
   .selectLangCont {
-    @apply absolute left-6 top-6;
+    @apply absolute left-24 top-6;
   }
   .selectLangBtn {
     @apply flex py-2 px-2 w-28 justify-between items-center;

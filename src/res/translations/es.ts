@@ -1,4 +1,10 @@
 export const es = {
+    headers: {
+        HOME: "Inicio",
+        ABOUT: "Acerca",
+        PROJECTS: "Projectos",
+        CONTACT: "Contacto",
+    },
     langs: {
         en: "Inglés",
         es: "Español",

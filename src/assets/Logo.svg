@@ -1,0 +1,20 @@
+<svg style="height:100px;width:100%;background-color:Green">
+
+<defs>
+<filter id="whiteOutlineEffect" color-interpolation-filters="sRGB">
+  <feMorphology in="SourceAlpha" result="MORPH" operator="dilate" radius="2" />
+  <feColorMatrix in="MORPH" result="WHITENED" type="matrix" values="-1 0 0 0 1, 0 -1 0 0 1, 0 0 -1 0 1, 0 0 0 1 0"/>
+  <feMerge>
+    <feMergeNode in="WHITENED"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+</defs>
+
+<g>
+  <text x="10" y="50" fill="black" font-size="60" filter="url(#whiteOutlineEffect)">
+    Example
+  </text>
+</g>
+
+</svg>

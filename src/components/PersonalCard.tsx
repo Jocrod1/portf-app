@@ -1,6 +1,7 @@
 import React from "react";
 import { GitHub, Instagram, Linkedin, Twitter } from "react-feather";
 import { useTranslation } from "react-i18next";
+import { ReactComponent as Logo } from "../assets/LogTEST.svg";
 
 const PersonalCard = () => {
   const { t } = useTranslation();
