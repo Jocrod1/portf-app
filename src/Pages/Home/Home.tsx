@@ -6,6 +6,7 @@ import SelectLang from "../../components/SelectLang";
 //3rd party
 import ReactPageScroller, { SectionContainer } from "react-page-scroller";
 import Navbar from "../../components/Navbar";
+import About from "../About/About";
 
 const Home: FunctionComponent = () => {
   const [page, setPage] = useState(0);
@@ -16,16 +17,11 @@ const Home: FunctionComponent = () => {
         // onBeforePageScroll={(v) => console.log(v)}
         customPageNumber={page}
       >
-        <SectionContainer height={100}>
-          <div className="body">
-            <PersonalCard />
-          </div>
-        </SectionContainer>
-        <div className="body bg-zinc-100">
-          <PersonalCard />
-        </div>
         <div className="body">
           <PersonalCard />
+        </div>
+        <div className="body border-t-2">
+          <About />
         </div>
       </ReactPageScroller>
       <Navbar page={page} setPage={(val) => setPage(val)} />

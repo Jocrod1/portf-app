@@ -10,6 +10,17 @@ export const en = {
         es: "Spanish",
     },
     aboutMe: {
-        descSummary: "Software developer based in Valencia, Spain"
+        descSummary: "Software Engineer currently living in Valencia, Spain",
+        title: "👋 ¡Hola!, i'm José Pereira.",
+        description: "A Software Engineer" +
+                    " from Venezuela currently living in Valencia, Spain. " +
+                    " i love hackathons and Game Jams, i’ve participated on GGJ and Ludum Dare Jams. " +
+                    "I’m now working as a Fullstack & Mobile Developer remotely.",
+        birthday: "B-Day",
+        birthdayVal: "06/18/98",
+        age: "Age",
+        ageVal: "years",
+        email: "Email",
+        phone: "Phone"
     }
 }

@@ -9,7 +9,7 @@ const Navbar = ({ page = 0, setPage = (val: number) => {} }) => {
     HOME: "HOME",
     ABOUT: "ABOUT",
     // PROJECTS: "PROJECTS",
-    CONTACT: "CONTACT",
+    // CONTACT: "CONTACT",
   };
 
   const [selModule, setSelModule] = useState(ButtonsModules.HOME);
