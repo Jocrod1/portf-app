@@ -21,6 +21,7 @@ export const en = {
         age: "Age",
         ageVal: "years",
         email: "Email",
-        phone: "Phone"
+        phone: "Phone",
+        readCV: "Read CV",
     }
 }

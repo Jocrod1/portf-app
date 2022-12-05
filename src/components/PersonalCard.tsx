@@ -1,7 +1,7 @@
-import React from "react";
-import { GitHub, Instagram, Linkedin, Twitter } from "react-feather";
+import { GitHub, Linkedin, Twitter } from "react-feather";
 import { useTranslation } from "react-i18next";
-import { ReactComponent as Logo } from "../assets/LogTEST.svg";
+import Itchio from "../assets/icons/brands/Itchio";
+import SocialsButtons from "./SocialsButtons";
 
 const PersonalCard = () => {
   const { t } = useTranslation();
@@ -20,32 +20,7 @@ const PersonalCard = () => {
         <span className="text-left mb-5 lg:mb-2">
           {t("aboutMe.descSummary")}
         </span>
-        <div className="flex flex-row w-24 justify-between">
-          <a
-            href="http://www.twitter.com/jocrod1"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <Twitter className="socials-icons" />
-          </a>
-          <a
-            href="http://www.github.com/jocrod1"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <GitHub className="socials-icons" />
-          </a>
-          {/* <a
-            href="http://www.instagram.com/jocrod1"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <Instagram className="socials-icons ins" />
-          </a> */}
-          <a href="http://www.linkedin.com/" target={"_blank"} rel="noreferrer">
-            <Linkedin className="socials-icons" />
-          </a>
-        </div>
+        <SocialsButtons />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-import React, { Component, FunctionComponent } from "react";
-import { Calendar, Gift, Mail, Phone, Icon, Circle } from "react-feather";
+import { FunctionComponent } from "react";
+import { Calendar, Gift, Mail, Phone, Circle } from "react-feather";
 import { useTranslation } from "react-i18next";
 
 const ItemAbout = (icon: JSX.Element, title: String, description: String) => {
@@ -34,7 +34,7 @@ const About: FunctionComponent = () => {
           <span className="flex-1 pr-4 text-justify">
             {t("aboutMe.description")}
           </span>
-          <div className="border-r hidden md:block" />
+          {/* <div className="border-r hidden md:block" /> */}
           <div className="flex flex-1 justify-center">
             <ul className="flex flex-col justify-around pl-4">
               <li>
@@ -65,9 +65,14 @@ const About: FunctionComponent = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-black text-white dark:bg-zinc-100 dark:text-black py-3 px-5">
-            {"Read CV"}
-          </button>
+          <a
+            href={require("../../assets/Documents/CV José Pereira.pdf")}
+            target={"_blank"}
+            rel="noreferrer"
+            className="bg-black text-white dark:bg-zinc-100 dark:text-black py-3 px-5 cursor-pointer"
+          >
+            {t("aboutMe.readCV")}
+          </a>
         </div>
       </div>
     </div>

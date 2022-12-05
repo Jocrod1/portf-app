@@ -1,10 +1,8 @@
 import React, { FunctionComponent, useState } from "react";
-import BtnDarkMode from "../../components/BtnDarkMode";
 import PersonalCard from "../../components/PersonalCard";
-import SelectLang from "../../components/SelectLang";
 
 //3rd party
-import ReactPageScroller, { SectionContainer } from "react-page-scroller";
+import ReactPageScroller from "react-page-scroller";
 import Navbar from "../../components/Navbar";
 import About from "../About/About";
 

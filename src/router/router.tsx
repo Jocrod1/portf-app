@@ -1,13 +1,5 @@
-//React imports
-import { Suspense, lazy } from "react";
-
 //Router Components
-import {
-  BrowserRouter as AppRouter,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as AppRouter, Route, Routes } from "react-router-dom";
 
 //Routes
 import RoutesApp from "./routes";

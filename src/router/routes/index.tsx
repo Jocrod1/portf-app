@@ -1,4 +1,3 @@
-import { lazy } from "react";
 import Home from "../../Pages/Home/Home";
 
 const PageTitle = "Jocrod Portfolio";

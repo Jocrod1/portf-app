@@ -21,6 +21,7 @@ export const es = {
         age: "Edad",
         ageVal: "años",
         email: "Email",
-        phone: "Móvil"
+        phone: "Móvil",
+        readCV: "Leer CV",
     }
 }
